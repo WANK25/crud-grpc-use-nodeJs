@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Manajemen Pengguna</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Manajemen Pengguna</h1>
+      <button id="reset" class="reset">Reset</button>
+      <div class="grup-form">
+        <div class="create-item">
+          <div class="grup-input">
+            <input type="text" id="name-input" placeholder="Nama" />
+            <input type="email" id="email-input" placeholder="Email" />
+          </div>
+          <button id="create-user-btn">Add</button>
+        </div>
+
+        <div class="update-item" id="update-item"></div>
+      </div>
+
+      <table id="user-table">
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody id="data" class="tbody"></tbody>
+      </table>
+
+      <p id="addSuccess">Data berhasil ditambah</p>
+      <p id="updateSuccess">Data berhasil diupdate</p>
+      <p id="deleteSuccess">Data berhasil didelete</p>
+    </div>
+  </body>
+</html>
